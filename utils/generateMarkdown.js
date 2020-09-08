@@ -7,7 +7,7 @@ function generateMarkdown(data) {
   fs.writeFile(
     filename,
     `# ${data.title}\n\n
-[![GitHub Badge](https://img.shields.io/badge/GitHub-Profile-blue?style=for-the-badge&logo=appveyor)](${data.profile})\n\n
+[![GitHub Badge](https://img.shields.io/badge/github.com/dewrivers)](${data.profile})\n\n
 ## Table of Contents\n\n
 [Description](#Description)\n
 [Installation](#Installation)\n
@@ -33,7 +33,7 @@ ${data.tests}\n\n
         return console.log(err)
       }
       else {
-        console.log("Document complete.")
+        console.log("Complete!!")
       }
     }
   );
