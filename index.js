@@ -75,34 +75,9 @@ const questions = [
 
 
 ];
-// Function to pastes img
-function getImage(data) {
-    let demo = data.demo
-    return (
-        `## End Result` + '\n' + demo
 
-    )
-};
 
-// Function to write README file
-function writeToFile(fileName, data) {
-    console.log("data: ", data);
-    let str = `
-    
-        # Title: ${data.title},
-        # Description: ${data.description},
-        ## Installation ${data.install},
-        ## Github: ${data.github},
-        ## Email: ${data.email},
-        ## License This project is licensed under the ${data.licenseName} - see the ${data.licenseUrl} file for details
-        
-    `;
 
-    fs.writeFile(fileName, str, (err) => {
-        if(err) throw err;
-        console.log("File created");
-    });
-}
 
 // Function to initialize program
 function init() {
