@@ -1,7 +1,7 @@
-# A good README
+ # A good README
 
 
-  [![GitHub Badge](https://img.shields.io/badge/github.com/dewrivers)](undefined)
+  [![GitHub Badge](https://github.com/dewrivers)]
 
 
   ## Table of Contents
@@ -43,12 +43,13 @@
 
   ## Contributions
 
-  Jose M. Vasconcellos
-  Rocio Rios Bautista
+  * Jose M. Vasconcellos
+  * Rocio Rios Bautista
 
   ## Tests
 
   N/A
+
 
 
   
