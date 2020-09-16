@@ -10,7 +10,7 @@ function generateMarkdown(data) {
   let filename = "README.md";
 
   let str =`# ${data.title}\n\n
-  [![GitHub Badge](https://github.com/dewrivers)]\n\n
+  [GitHub Profile](https://github.com/dewrivers)\n\n
   ## Table of Contents\n\n
   [Description](#Description)\n
   [Installation](#Installation)\n

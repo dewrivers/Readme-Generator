@@ -1,7 +1,7 @@
  # A good README
 
 
-  [![GitHub Badge](https://github.com/dewrivers)]
+  [GitHub Profile](https://github.com/dewrivers)
 
 
   ## Table of Contents
