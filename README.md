@@ -1,50 +1,24 @@
-# Good README
+
+    
+        # Title: Generate a Good README!,
+        # Description: An app that creates Good README, everything is created from node.js, it allows us to have a better description of the projects to better understand the tools used in them, the collaborators who worked on the project, how to use the programs, how to install them etc.,
+        ## Installation In Comman run node index.js -> Answer all the questions -> Once all elements have been properly inputted, a README file will be generated.,
+        ## Github: undefined,
+        ## Email: undefined,
+        ## License This project is licensed under the GNU AGPLv3 - see the https://choosealicense.com/licenses/gpl-3.0/ file for details
+        
+    e
+
+  
 
 
-[![GitHub Badge](https://img.shields.io/badge/GitHub-Profile-blue?style=for-the-badge&logo=appveyor)](undefined)
+  ## Contributions
+
+  undefined
+
+  ## Tests
+
+  N/A
 
 
-## Table of Contents
-
-
-[Description](#Description)
-
-[Installation](#Installation)
-
-[Usage](#Usage)
-
-[License](#License)
-
-[Contributions](#Contributions)
-
-[Tests](#Tests)
-
-## Description
-
-Is an online code application that allows me to create a more professional README, with more clarity and more details about the project in question.
-
-
-## Installation
-
-undefined
-
-
-## Usage
-
-Every time you have a new proyect you can use this app to make clearly all the details in your projects.
-
-
-## License
-
-
-
-
-## Contributions
-
-undefined
-
-## Tests
-
-N/A
-
-
+  

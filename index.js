@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const generateMarkdown = require("./utils/generateMarkdown");
-
+const fs = require('fs');
 
 
 // ARRAY OF QUESTIONS FOR USER 
@@ -61,6 +61,7 @@ const questions = [
         name: "license",
         message: "What License used?",
         choices: [
+            "GNU AGPLv3",
             "Boost",
             "None",
             "Other"
@@ -74,28 +75,41 @@ const questions = [
 
 
 ];
+// Function to pastes img
+function getImage(data) {
+    let demo = data.demo
+    return (
+        `## End Result` + '\n' + demo
+
+    )
+};
 
 // Function to write README file
 function writeToFile(fileName, data) {
+    console.log("data: ", data);
     let str = `
+    
         # Title: ${data.title},
         # Description: ${data.description},
         ## Installation ${data.install},
         ## Github: ${data.github},
         ## Email: ${data.email},
-        ## License This project is licensed under the ${licenseName} - see the ${licenseUrl} file for details
+        ## License This project is licensed under the ${data.licenseName} - see the ${data.licenseUrl} file for details
         
     `;
 
-    fs.writeFile(fileName, str);
+    fs.writeFile(fileName, str, (err) => {
+        if(err) throw err;
+        console.log("File created");
+    });
 }
 
 // Function to initialize program
 function init() {
     inquirer.prompt(questions).then((response) => {
-        console.log(response)
+        console.log("response: ", response)
         const markDown = generateMarkdown(response)
-        console.log(markDown)
+        console.log("markDown: ", markDown)
         writeToFile("Readme.md", markDown)
     })
 }
